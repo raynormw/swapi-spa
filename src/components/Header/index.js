@@ -1,37 +1,18 @@
 import React, { Component } from "react";
+import { shape } from "prop-types";
 
-import { API } from "utils/API";
 import TitleHeader from "components/Header/TitleHeader";
 import ImageHeader from "components/Header/ImageHeader";
 import LabelHeader from "components/Header/LabelHeader";
 import ContentHeader from "components/Header/ContentHeader";
 
 class MainHeader extends Component {
-  state = {
-    data: {}
+  static propTypes = {
+    data: shape({}).isRequired
   };
 
-  _fetchData() {
-    const url = `${API}/people/1`;
-
-    fetch(url)
-      .then(res => res.json())
-      .then(data => {
-        this.setState({ data });
-      })
-      .catch(error => console.log("Uh oh! There is a problem.."));
-  }
-
-  componentDidMount() {
-    this._fetchData();
-  }
-
   render() {
-    const { data } = this.state;
-
-    if (Object.keys(data).length === 0 && data.constructor === Object) {
-      return <div>Loading..</div>;
-    }
+    const { data } = this.props;
 
     return (
       <div className="container header">
