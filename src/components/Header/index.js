@@ -17,10 +17,9 @@ class MainHeader extends Component {
     fetch(url)
       .then(res => res.json())
       .then(data => {
-        console.log(data, "data");
         this.setState({ data });
       })
-      .catch(error => console.log("Uh oh! There Is A Problem.."));
+      .catch(error => console.log("Uh oh! There is a problem.."));
   }
 
   componentDidMount() {
@@ -30,6 +29,10 @@ class MainHeader extends Component {
   render() {
     const { data } = this.state;
 
+    if (Object.keys(data).length === 0 && data.constructor === Object) {
+      return <div>Loading..</div>;
+    }
+
     return (
       <div className="container header">
         <TitleHeader name={data.name} />
@@ -37,7 +40,7 @@ class MainHeader extends Component {
           <div className="row">
             <ImageHeader />
             <LabelHeader />
-            <ContentHeader />
+            <ContentHeader data={data} />
           </div>
         </div>
       </div>

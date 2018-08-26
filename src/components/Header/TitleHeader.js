@@ -1,6 +1,11 @@
 import React, { Component } from "react";
+import { string } from "prop-types";
 
 class TitleHeader extends Component {
+  static propTypes = {
+    name: string.isRequired
+  };
+
   render() {
     const { name } = this.props;
 
