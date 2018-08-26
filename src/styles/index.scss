@@ -1,0 +1,22 @@
+@import "variable.scss";
+
+.header {
+  margin: 24px auto 16px;
+
+  .content {
+    background-color: $vulture;
+    color: $vanilla;
+    padding: 24px 16px;
+
+    .image-container {
+      background-color: $genius;
+      text-align: center;
+      height: 98%;
+      padding-top: 35%;
+
+      @media screen and (max-width: $break-extra-small) {
+        padding: 48px;
+      }
+    }
+  }
+}
