@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import MainHeader from "components/Header";
+import Content from "components/Content";
 
 class App extends Component {
   render() {
@@ -9,9 +10,8 @@ class App extends Component {
         <MainHeader />
         <div className="container">
           <div className="row">
-            <div className="col-sm test">One of three columns</div>
-            <div className="col-sm test">One of three columns</div>
-            <div className="col-sm test">One of three columns</div>
+            <Content />
+            <div className="col-4">One of three columns</div>
           </div>
         </div>
       </div>

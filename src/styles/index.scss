@@ -36,3 +36,16 @@
     }
   }
 }
+
+.content {
+  .actor-name {
+    color: $google;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+
+  .link {
+    text-align: right;
+    color: $turquoise;
+  }
+}
