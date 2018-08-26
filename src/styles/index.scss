@@ -4,7 +4,7 @@
   margin: 24px auto 16px;
 
   .title-border {
-    border-left: 5px solid red;
+    border-left: 5px solid $google;
   }
 
   .content {
@@ -16,7 +16,19 @@
       background-color: $genius;
       text-align: center;
       height: 100%;
-      padding-top: 35%;
+      padding-top: 40%;
+
+      @media screen and (max-width: $break-large) {
+        padding-top: 50%;
+      }
+
+      @media screen and (max-width: $break-medium) {
+        padding-top: 30%;
+      }
+
+      @media screen and (max-width: $break-small) {
+        padding-top: 40%;
+      }
 
       @media screen and (max-width: $break-extra-small) {
         padding: 48px;

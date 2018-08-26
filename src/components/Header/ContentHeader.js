@@ -10,6 +10,7 @@ class ContentHeader extends Component {
         <p className="mb-1">asd</p>
         <p className="mb-1">asd</p>
         <p className="mb-1">asd</p>
+        <p className="mb-1">asd</p>
       </div>
     );
   }
