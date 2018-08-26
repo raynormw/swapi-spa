@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class LabelHeader extends Component {
   render() {
     return (
-      <div className="col-auto col-sm-auto col-md-auto">
+      <div className="col-auto col-sm-auto col-md-auto pr-0">
         <p className="mb-1">Height:</p>
         <p className="mb-1">Mass:</p>
         <p className="mb-1">Hair Color:</p>
