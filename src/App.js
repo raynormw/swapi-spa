@@ -6,7 +6,8 @@ import Content from "components/Content";
 
 class App extends Component {
   state = {
-    data: {}
+    data: {},
+    loading: true
   };
 
   _fetchData() {
@@ -15,7 +16,7 @@ class App extends Component {
     fetch(url)
       .then(res => res.json())
       .then(data => {
-        this.setState({ data });
+        this.setState({ data, loading: false });
       })
       .catch(error => console.log("Uh oh! There is a problem.."));
   }
@@ -25,9 +26,9 @@ class App extends Component {
   }
 
   render() {
-    const { data } = this.state;
+    const { data, loading } = this.state;
 
-    if (Object.keys(data).length === 0 && data.constructor === Object) {
+    if (loading) {
       return <div>Loading..</div>;
     }
 

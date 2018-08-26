@@ -19,7 +19,7 @@ class MainContent extends Component {
           <div className="col-8 actor-name">{lastName} Movie's</div>
           <div className="col-4 link">See More</div>
         </div>
-        <CardContent />
+        <CardContent films={data.films} />
       </div>
     );
   }

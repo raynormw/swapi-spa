@@ -48,4 +48,14 @@
     text-align: right;
     color: $turquoise;
   }
+
+  .play-container {
+    text-align: center;
+    padding: 20px;
+    background-color: $purple;
+
+    &.orange {
+      background-color: $orange;
+    }
+  }
 }
