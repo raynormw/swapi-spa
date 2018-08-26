@@ -46,7 +46,7 @@ class CardContent extends Component {
     for (let i = 0; i < 4; i++) {
       if (i % 2) {
         content.push(
-          <div className="col-6 col-sm-3 mb-4 pr-3" key={i}>
+          <div className="col-6 col-sm-3 mb-4 card-container" key={i}>
             <div className="card border shadow">
               <div className="container play-container orange">
                 <img className="img-fluid" src={logo} alt="play_logo" />
@@ -55,17 +55,17 @@ class CardContent extends Component {
                 <p className="card-title font-weight-bold">
                   {changeString(data[i].title)}
                 </p>
-                <p className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
+                <p className="card-text mb-0">Director:</p>
+                <p className="card-text">{data[i].director}</p>
+                <p className="card-text mb-0">Release:</p>
+                <p className="card-text">{data[i].release_date}</p>
               </div>
             </div>
           </div>
         );
       } else {
         content.push(
-          <div className="col-6 col-sm-3 mb-4 pr-3" key={i}>
+          <div className="col-6 col-sm-3 mb-4 card-container" key={i}>
             <div className="card border shadow">
               <div className="container play-container">
                 <img className="img-fluid" src={logo} alt="play_logo" />
@@ -74,10 +74,10 @@ class CardContent extends Component {
                 <p className="card-title font-weight-bold">
                   {changeString(data[i].title)}
                 </p>
-                <p className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
+                <p className="card-text mb-0">Director:</p>
+                <p className="card-text">{data[i].director}</p>
+                <p className="card-text mb-0">Release:</p>
+                <p className="card-text">{data[i].release_date}</p>
               </div>
             </div>
           </div>

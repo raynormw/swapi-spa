@@ -49,13 +49,25 @@
     color: $turquoise;
   }
 
-  .play-container {
-    text-align: center;
-    padding: 20px;
-    background-color: $purple;
+  .card-container {
+    @media screen and (min-width: $break-large) {
+      &:not(:last-child) {
+        padding-right: 1rem;
+      }
+    }
 
-    &.orange {
-      background-color: $orange;
+    .play-container {
+      text-align: center;
+      padding: 20px;
+      background-color: $purple;
+
+      &.orange {
+        background-color: $orange;
+      }
+    }
+
+    .card-text {
+      color: $genius;
     }
   }
 }
