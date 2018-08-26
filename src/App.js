@@ -5,13 +5,13 @@ import MainHeader from "components/Header";
 class App extends Component {
   render() {
     return (
-      <div class="App">
+      <div className="App">
         <MainHeader />
         <div className="container">
-          <div class="row">
-            <div class="col-sm test">One of three columns</div>
-            <div class="col-sm test">One of three columns</div>
-            <div class="col-sm test">One of three columns</div>
+          <div className="row">
+            <div className="col-sm test">One of three columns</div>
+            <div className="col-sm test">One of three columns</div>
+            <div className="col-sm test">One of three columns</div>
           </div>
         </div>
       </div>
