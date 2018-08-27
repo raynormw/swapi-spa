@@ -50,9 +50,19 @@
   }
 
   .card-container {
-    @media screen and (min-width: $break-large) {
+    @media screen and (max-width: $break-extra-small) {
+      &:nth-of-type(odd) {
+        padding-right: 0.5rem;
+      }
+    }
+
+    @media screen and (min-width: $break-small) {
+      &:not(:first-child) {
+        padding-left: 0.5rem;
+      }
+
       &:not(:last-child) {
-        padding-right: 1rem;
+        padding-right: 0.5rem;
       }
     }
 
