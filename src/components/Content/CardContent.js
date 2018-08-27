@@ -9,6 +9,7 @@ class CardContent extends Component {
     data: [],
     loading: true
   };
+
   static propTypes = {
     films: arrayOf(string).isRequired
   };

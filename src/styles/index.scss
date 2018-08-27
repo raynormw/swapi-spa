@@ -38,15 +38,10 @@
 }
 
 .content {
-  .actor-name {
-    color: $google;
-    font-size: 1.3em;
-    font-weight: 600;
-  }
-
   .link {
     text-align: right;
     color: $turquoise;
+    padding-top: 5px;
   }
 
   .card-container {
@@ -80,4 +75,16 @@
       color: $genius;
     }
   }
+}
+
+.label {
+  color: $google;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.side-content {
+  background-color: $vulture;
+  color: $vanilla;
+  padding: 15px;
 }

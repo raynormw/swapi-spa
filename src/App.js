@@ -36,10 +36,7 @@ class App extends Component {
       <div className="App">
         <MainHeader data={data} />
         <div className="container">
-          <div className="row">
-            <Content data={data} />
-            <div className="col-12 col-lg-4">One of three columns</div>
-          </div>
+          <Content data={data} />
         </div>
       </div>
     );
