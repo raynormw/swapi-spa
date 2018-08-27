@@ -53,9 +53,10 @@ class SideContent extends Component {
           </div>
         </div>
         <div className="card-body">
-          <p className="card-title font-weight-bold">asd</p>
-          <p className="card-text mb-0">asd</p>
-          <p className="card-text">asd</p>
+          <p className="card-text">{data.opening_crawl}</p>
+          <div className="row">
+            <div className="col align-self-end link">See More</div>
+          </div>
         </div>
       </div>
     );

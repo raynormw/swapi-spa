@@ -33,7 +33,7 @@ class App extends Component {
     }
 
     return (
-      <div className="App">
+      <div className="App mb-5">
         <MainHeader data={data} />
         <div className="container">
           <Content data={data} />
